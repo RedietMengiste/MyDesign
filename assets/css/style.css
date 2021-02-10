@@ -1,0 +1,440 @@
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
+
+  header {
+    background-repeat: no-repeat;
+    /* border-radius: 2em; */
+    /* border-color: white; */
+    /* border: thick; */
+    /* border-style: solid; */
+
+    height: 28em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 40em;
+    animation: mymove 5s ease-in-out;
+  }
+  @keyframes mymove {
+    70% {
+      background-position: 30% 20%;
+    }
+  }
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+  }
+  header h2 {
+    margin: -1em 1em 0em 0em;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -29% 20% 9% 55%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-color: #f9e4fa;
+    height: 16em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 38%;
+  }
+  .explanation {
+    float: left;
+    /* background-color: #c195b3; */
+    height: 20em;
+    text-align: center;
+    padding-top: 5em;
+    margin-left: 42em;
+    margin-right: 6em;
+    margin-top: 1em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    text-align: center;
+    padding-left: 5%;
+    height: 300px;
+    padding-top: 33%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    background-image: url(../images/about.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    background-size: 35em;
+    margin-right: 10em;
+    z-index: 11;
+    content: " ";
+    color: rgb(202, 202, 202);
+  }
+  .participation::after {
+    padding-left: 88%;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 2%;
+    margin-top: -248px;
+    border-bottom: 1px solid rgb(0, 255, 255);
+  }
+
+  .benefits {
+    /* float: left; */
+    background-image: url(../images/use.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 15%;
+    background-size: 31em;
+    background-color: #000;
+    height: 20em;
+    text-align: center;
+    padding: 6em 40em 0em 10em;
+    margin-top: 8.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 19em;
+  }
+  .benefits h3 {
+    margin-top: -15em;
+    margin-left: 15em;
+  }
+  .benefits::before {
+    padding-left: 11em;
+    content: "";
+    display: block;
+    margin-top: 1em;
+    height: 100%;
+    margin-left: -5em;
+    background-image: url(../images/benefit.svg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+  }
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 30em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 50px;
+  }
+
+  footer a {
+    font-size: 22px;
+  }
+
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  .design-selection {
+    float: left;
+    margin-left: 12%;
+  }
+  .design-selection h3 {
+    margin-left: 24%;
+  }
+  .design-archives {
+    text-align: center;
+    margin-right: 33%;
+  }
+  .zen-resources {
+    float: right;
+    margin-right: 16%;
+    margin-top: -7%;
+  }
+  .zen-resources h3 {
+    margin-left: 34%;
+    margin-top: -7%;
+  }
+  li {
+    list-style: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
+
+  header {
+    background-repeat: no-repeat;
+    height: 41em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 40em;
+    animation: mymove 5s ease-in-out;
+  }
+  @keyframes mymove {
+    70% {
+      background-position: 30% 20%;
+    }
+  }
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 69% 20% 0 -10%;
+  }
+  header h2 {
+    margin: 1em 5em 0em 0em;
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -15% 35% 9% 30%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-repeat: no-repeat;
+    background-color: #f9e4fa;
+    height: 16em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 38%;
+  }
+  .explanation {
+    /* background-color: #c195b3; */
+    height: 20em;
+    text-align: center;
+    padding-top: 3em;
+    margin-left: 2em;
+    margin-right: 6em;
+    margin-top: 0em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    margin-top: -6em;
+    text-align: center;
+    padding-left: 5%;
+    height: 450px;
+    padding-top: 0%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    background-image: url(../images/about.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+    background-size: 30em;
+    margin-right: 10em;
+    z-index: 11;
+    content: " ";
+    color: rgb(202, 202, 202);
+  }
+  .participation::after {
+    padding-left: 88%;
+    content: "";
+
+    margin: 0 auto;
+    width: 2%;
+    margin-top: 200px;
+  }
+
+  .benefits {
+    /* float: left; */
+    background-image: url(../images/use.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+    background-size: 25em;
+    background-color: #000;
+    height: 20em;
+    text-align: center;
+    padding: 6em 0em 3em 0em;
+    margin-top: 9.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 2em;
+    margin-right: 25em;
+    margin-top: -1em;
+  }
+  .benefits h3 {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 20em;
+  }
+  /* .benefits::before {
+    padding-left: 11em;
+    content: "";
+    display: block;
+    margin-top: 1em;
+    height: 100%;
+    margin-left: -5em;
+    background-image: url(../images/benefit.svg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+  } */
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 30em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 50px;
+  }
+
+  footer a {
+    font-size: 22px;
+  }
+
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  .design-selection {
+    margin-left: 42%;
+  }
+  .design-selection h3 {
+    margin-left: 22%;
+  }
+  .design-archives {
+    margin-left: 42%;
+    margin-top: 5%;
+  }
+  .design-archives h3 {
+    margin-left: 22%;
+  }
+  .zen-resources {
+    margin-left: 42%;
+    margin-top: 5%;
+  }
+  .zen-resources h3 {
+    margin-left: 22%;
+    margin-top: 5%;
+  }
+  li {
+    list-style: none;
+  }
+}
